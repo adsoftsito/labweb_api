@@ -3,8 +3,9 @@ import graphql_jwt
 
 import links.schema
 import users.schema
+import recommender.schema
 
-class Query(users.schema.Query, links.schema.Query, graphene.ObjectType):
+class Query(users.schema.Query, links.schema.Query, recommender.schema.Query, graphene.ObjectType):
     pass
 
 class Mutation(users.schema.Mutation, links.schema.Mutation, graphene.ObjectType):
